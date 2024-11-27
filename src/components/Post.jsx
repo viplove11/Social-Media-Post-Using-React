@@ -26,7 +26,7 @@ export const Post = ({ post }) => {
         onMouseLeave={handleMouseLeave} // Hide delete icon when mouse leaves
       >
         <h5 className="card-title">
-          {post.title}
+          {post.title.slice(0,20)}...
           {deleteVisible ? (
             <span
               onClick={() => deletePost(post.id)}
@@ -36,7 +36,7 @@ export const Post = ({ post }) => {
             </span>
           ) : null}
         </h5>
-        <p className="card-text">{post.body}</p>
+        <p className="card-text">{post.body.slice(0,180)}...</p>
         <p className="reactionIcon position-relative">
           {post.reactions > 0 ? (
             <>

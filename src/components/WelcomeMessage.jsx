@@ -1,6 +1,6 @@
 import React from "react";
 
-export const WelcomeMessage = ({ handleFetchPost }) => {
+export const WelcomeMessage = () => {
   return (
     <div>
       <div className="container col-xxl-8 px-4 py-5 welcomeContainer">
@@ -30,7 +30,7 @@ export const WelcomeMessage = ({ handleFetchPost }) => {
               engage actively with the platform. Let me know if you'd like to
               tweak the tone further!
             </p>
-            <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+            {/* <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <button
                 type="button"
                 className="btn btn-warning  px-2 me-md-2"
@@ -39,7 +39,7 @@ export const WelcomeMessage = ({ handleFetchPost }) => {
               >
                 Fetch Post
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
