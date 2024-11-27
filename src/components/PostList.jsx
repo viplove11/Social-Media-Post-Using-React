@@ -15,7 +15,10 @@ export const PostList = () => {
       .then((data) => {
         add_InitialAPI_Post(data.posts);
         setFetching(false);
+        console.log(data);
+        
       });
+      
   }, []);
 
   return (
